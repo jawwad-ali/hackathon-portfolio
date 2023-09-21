@@ -17,7 +17,7 @@ const HeroSection = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi I'm <span className="text-[#915eff]">Ali</span>
+            Hi I am <span className="text-[#915eff]">Ali</span>
           </h1>
           <p className={`${styles.heroSubText}`}>
             I develop 3D user visuals , user <br className="sm:block hidden" />
