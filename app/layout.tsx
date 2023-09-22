@@ -1,9 +1,6 @@
-import Wrapper from "@/HOC/wrapper";
+// import Wrapper from "@/HOC/wrapper";
 import "./globals.css";
 import type { Metadata } from "next";
-import Navbar from "@/components/Navbar";
-import HeroSection from "@/components/HeroSection";
-// import { styles } from "@/styles";
 
 export const metadata: Metadata = {
   title: "Ali Jawwad | Portfolio",
@@ -17,13 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`relative z-0 bg-primary bg-hero-pattern bg-cover bg-no-repeat bg-center`}
-      >
-        <Navbar />
-        <HeroSection />
-        <Wrapper>{children}</Wrapper>
-      </body>
+      <body className={`bg-primary`}>{children}</body>
     </html>
   );
 }

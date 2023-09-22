@@ -1,13 +1,16 @@
 import About from "@/HOC/About";
 import HeroSection from "@/components/HeroSection";
-// import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <>
-      {/* <Navbar /> */}
-      {/* <HeroSection /> */}
+      <div className="relative z-0 bg-hero-pattern bg-cover bg-no-repeat bg-center">
+        <Navbar />
+        <HeroSection />
+      </div>
       <About />
+
       {/*<Experience />
       <Tech />
       <Works />

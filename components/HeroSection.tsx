@@ -3,8 +3,8 @@ import ComputerCanvas from "./ComputerCanvas";
 
 import ScrollDown from "./ScrollDown";
 
-const HeroSection = () => { 
-  return ( 
+const HeroSection = () => {
+  return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
@@ -15,19 +15,20 @@ const HeroSection = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
 
-        <div>
+        <div className="">
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi I am <span className="text-[#915eff]">Ali</span>
           </h1>
           <p className={`${styles.heroSubText}`}>
             I develop 3D user visuals , user <br className="sm:block hidden" />
-            interfaces and Web Application
+            interfaces and Web{" "}
+            <span className="lg:block inline-block"> Application</span>
           </p>
         </div>
       </div>
 
-      {/* Right Side */}
-      <ComputerCanvas />
+      {/* Computer 3D Model */}
+      {/* <ComputerCanvas /> */}
 
       {/* Scroll Down Component */}
       <ScrollDown />
