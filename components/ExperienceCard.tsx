@@ -4,7 +4,7 @@ import {
 
 const ExperienceCard = ({ experience, idx }: any) => {
   return (
-    <VerticalTimelineElement
+    <VerticalTimelineElement 
       key={idx}
       contentStyle={{ background: "#1d1836", color: "#fff" }}
       contentArrowStyle={{ borderRight: "7px solid #232631" }}

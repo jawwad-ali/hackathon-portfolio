@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 
-import { styles } from "@/styles"; 
+import { styles } from "@/styles";
 import { services } from "@/constants";
 
 import { fadeIn, textVariant } from "@/utils/motion";
@@ -30,7 +30,7 @@ const About = () => {
           Contentful, etc) to build fast-blazing modern serverless websites.
         </motion.p>
 
-        <div className="mt-[200px] flex flex-wrap gap-10 w-full">
+        <div className="mt-20 flex flex-wrap gap-10 w-full">
           {services.map((service, index) => (
             <ServiceCard key={service.title} index={index} {...service} />
           ))}

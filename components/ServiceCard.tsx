@@ -6,12 +6,12 @@ import Image from "next/image";
 const ServiceCard = ({ index, title, icon }: any) => {
   return (
     <>
-      <Tilt className="xs:w-[250px] mt-10 w-1/2 flex flex-wrap">
+      <Tilt className="xs:w-[250px] w-1/2 flex flex-wrap">
         <motion.div
           className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
           variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        > 
-          <div 
+        >
+          <div
             // @ts-ignore
             options={{ max: 45, scale: 1, speed: 450 }}
             className="bg-tertiary rounded-[20px] py-5 px-12 

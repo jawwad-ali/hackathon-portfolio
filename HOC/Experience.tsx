@@ -1,8 +1,6 @@
 "use client";
 
-import {
-  VerticalTimeline,
-} from "react-vertical-timeline-component";
+import { VerticalTimeline } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
 
 import "react-vertical-timeline-component/style.min.css";
@@ -26,13 +24,12 @@ const Experience = () => {
         </motion.div>
 
         <div className="mt-20 flex flex-col">
-            <VerticalTimeline>
-                {experiences.map((experience , idx) => (
-                    <ExperienceCard experience={experience} idx={idx} />
-                ))}
-            </VerticalTimeline>
+          <VerticalTimeline>
+            {experiences.map((experience, idx) => (
+              <ExperienceCard experience={experience} idx={idx} />
+            ))}
+          </VerticalTimeline>
         </div>
-
       </div>
     </>
   );
