@@ -1,8 +1,6 @@
 import {
-  VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { div } from "three/examples/jsm/nodes/Nodes.js";
 
 const ExperienceCard = ({ experience, idx }: any) => {
   return (
@@ -15,8 +13,8 @@ const ExperienceCard = ({ experience, idx }: any) => {
       icon={
         <div className="flex items-center justify-center h-full w-full">
           <img
-            src={experience.icon}
-            alt="Logo"
+            src={experience.icon.src}
+            alt={experience.title}
             className="w-[60%] h-[60%] object-contain"
           />
         </div>
@@ -49,4 +47,3 @@ const ExperienceCard = ({ experience, idx }: any) => {
 };
 
 export default ExperienceCard;
-// 1.34.23

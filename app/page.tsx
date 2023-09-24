@@ -1,5 +1,6 @@
 import About from "@/HOC/About";
 import Experience from "@/HOC/Experience";
+import Tech from "@/HOC/Tech";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 
@@ -13,8 +14,8 @@ export default function Home() {
       <About />
 
       <Experience />
-      {/*<Tech />
-      <Works />
+      <Tech />
+      {/*<Works />
       <Feedbacks />
 
       <div className="relative z-0">

@@ -23,7 +23,7 @@ import {
     jobit,
     tripguide,
     threejs,
-} from "../public/assets";
+} from "@/public/assets";
 
 export const navLinks = [
     {
