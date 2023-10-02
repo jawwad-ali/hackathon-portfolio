@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
@@ -12,7 +13,7 @@ const ExperienceCard = ({ experience, idx }: any) => {
       iconStyle={{ background: experience.iconBg }}
       icon={
         <div className="flex items-center justify-center h-full w-full">
-          <img
+          <Image
             src={experience.icon.src}
             alt={experience.title}
             className="w-[60%] h-[60%] object-contain"
