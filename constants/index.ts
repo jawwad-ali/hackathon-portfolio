@@ -16,12 +16,12 @@ import {
     git,
     figma,
     regex,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
     upwork,
     fiverr,
+    tiktok,
+    ecomm,
+    PhotoGallery
 } from "@/public/assets";
 
 export const navLinks = [
@@ -186,67 +186,82 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Tiktok",
+        hosted_link:"https://tiktik-chi.vercel.app/",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Social Media platform that allows users to search, upload, like and comment on videos. User can signin via Google and can manage his account.",
         tags: [
             {
-                name: "react",
-                color: "blue-text-gradient",
+                name: "react", 
+                color: "blue-text-gradient", 
             },
             {
-                name: "mongodb",
+                name: "sanity",
                 color: "green-text-gradient",
             },
             {
                 name: "tailwind",
                 color: "pink-text-gradient",
             },
-        ],
-        image: carrent,
-        source_code_link: "https://github.com/",
-    },
-    {
-        name: "Job IT",
-        description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-        tags: [
             {
-                name: "react",
+                name: "typescript",
                 color: "blue-text-gradient",
-            },
-            {
-                name: "restapi",
-                color: "green-text-gradient",
-            },
-            {
-                name: "scss",
-                color: "pink-text-gradient",
-            },
+            }
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: tiktok,
+        source_code_link: "https://github.com/jawwad-ali/Tiktok",
     },
     {
-        name: "Trip Guide",
+        name: "Ecommerce",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "Ecommerce application that enables users to buy products. A user can add products to cart and can checkout through stripe. User can signin through Google and Email and Password.",
         tags: [
             {
                 name: "nextjs",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "typescript",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "sanity",
                 color: "pink-text-gradient",
             },
+            {
+                name: "tailwind",
+                color: "blue-text-gradient",
+            }
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: ecomm,
+        hosted_link:"https://hackathon-beryl.vercel.app/",
+        source_code_link: "https://github.com/jawwad-ali/hackathon-portfolio",
+    },
+    {
+        name: "Photo Gallery",
+        description:
+            "A web application where user can upload image. Can add an image to album. User can like an image.",
+        tags: [
+            {
+                name: "nextjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "cloudinary",
+                color: "green-text-gradient",
+            },
+            {
+                name: "typescript",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "tailwind",
+                color: "green-text-gradient",
+            }
+        ],
+        image: PhotoGallery,
+        hosted_link:"https://cloudinary-photo-gallery-app.vercel.app/",
+        source_code_link: "https://github.com/jawwad-ali/cloudinary-photo-gallery-app",
     },
 ];
 

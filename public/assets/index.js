@@ -35,7 +35,16 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import tiktok from "./tiktok.jpg"
+import ecomm from "./ecomm.jpg"
+import arrow from "./arrow.png"
+import PhotoGallery from "./photo-gallery.jpg"
+
 export {
+  tiktok,
+  PhotoGallery,
+  arrow,
+  ecomm,
   logo,
   fiverr,
   regex,

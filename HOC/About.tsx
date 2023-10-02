@@ -9,14 +9,14 @@ import ServiceCard from "@/components/ServiceCard";
 
 const About = () => {
   return (
-    <>
+    <> 
       <div className={`${styles.paddingX} max-w-7xl mx-auto relative z-0 `}>
         <motion.div variants={textVariant(0.5)}>
           <p className={styles.sectionSubText}>Introduction</p>
           <h2 className={styles.sectionHeadText}>Overview.</h2>
         </motion.div>
 
-        <motion.p
+        <motion.p 
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-4  text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
