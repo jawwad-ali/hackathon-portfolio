@@ -1,35 +1,20 @@
-"use client";
-
-import { VerticalTimeline } from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
-
-import "react-vertical-timeline-component/style.min.css";
-
 import { styles } from "@/styles";
-import { experiences } from "@/constants";
-import { textVariant } from "@/utils/motion";
 
-import ExperienceCard from "@/components/ExperienceCard";
+import Heads from "@/components/Heads";
+import WorkHistory from "@/components/WorkHistory";
 
 const Experience = () => {
   return (
     <>
       <div
         className={`${styles.paddingX} max-w-7xl mx-auto relative z-0`}
-        style={{ marginTop: "100px" }}
+        style={{ marginTop: "100px" }} 
       >
-        <motion.div variants={textVariant(0.5)}>
-          <p className={styles.sectionSubText}>What I have done so far.</p>
-          <h2 className={styles.sectionHeadText}>Work Experience</h2>
-        </motion.div>
+        {/* Heading and SubHeading */}
+        <Heads subText="What I have done so far." heading="Work Experience" />
 
-        <div className="mt-20 flex flex-col">
-          <VerticalTimeline>
-            {experiences.map((experience, idx) => (
-              <ExperienceCard experience={experience} idx={idx} />
-            ))}
-          </VerticalTimeline>
-        </div>
+        {/* Component that shows where I've worked */}
+        <WorkHistory />
       </div>
     </>
   );

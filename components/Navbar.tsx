@@ -1,11 +1,11 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 
-import { menu, close } from "../public/assets";
+import { menu, close } from "../public/assets"; 
 import Logo from "../public/logo.jpeg";
 import Image from "next/image";
 

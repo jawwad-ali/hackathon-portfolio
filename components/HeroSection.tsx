@@ -1,6 +1,6 @@
 import { styles } from "@/styles";
 import ComputerCanvas from "./ComputerCanvas";
-
+ 
 import ScrollDown from "./ScrollDown";
 
 const HeroSection = () => {

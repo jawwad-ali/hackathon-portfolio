@@ -14,8 +14,8 @@ export default function Home() {
       </div>
       <About />
 
-      <Experience />
-      <Tech />
+      <Experience /> 
+      <Tech />  
       <Works />
       {/*<Feedbacks />
 

@@ -58,4 +58,3 @@ const BallCanvas = ({icon}:any) => {
   };
 
 export default BallCanvas;
-// 1.44.19

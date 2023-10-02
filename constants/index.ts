@@ -114,7 +114,7 @@ const technologies = [
 ];
 
 const experiences = [
-    {
+    { 
         title: "React.js Developer",
         company_name: "IOTA SQUARE",
         icon: regex,

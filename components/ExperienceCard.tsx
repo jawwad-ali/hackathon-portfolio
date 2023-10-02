@@ -4,7 +4,7 @@ import {
 } from "react-vertical-timeline-component";
 
 const ExperienceCard = ({ experience, idx }: any) => {
-  return (
+  return ( 
     <VerticalTimelineElement 
       key={idx}
       contentStyle={{ background: "#1d1836", color: "#fff" }}
@@ -14,9 +14,11 @@ const ExperienceCard = ({ experience, idx }: any) => {
       icon={
         <div className="flex items-center justify-center h-full w-full">
           <Image
-            src={experience.icon.src}
-            alt={experience.title}
+            src={experience?.icon?.src}
+            alt={experience?.title}
             className="w-[60%] h-[60%] object-contain"
+            width={60}
+            height={60}
           />
         </div>
       }
