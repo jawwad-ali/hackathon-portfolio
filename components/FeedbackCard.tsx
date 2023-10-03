@@ -25,23 +25,26 @@ const FeedbackCard = ({
     >
       <p className="text-white font-black text-[48px]">&quot;</p>
 
-      <div className="mt-1">
+      <div className="mt-1 flex flex-col justify-around h-full">
         <p className="text-white tracking-wider text-[18px]">{review}</p>
 
-        <div className="mt-7 flex justify-between items-center gap-1 ">
-          <div className="flex-1 flex flex-col ">
+        <div className="mt-7 h-full flex justify-between items-center gap-1">
+          <div className="flex-1 flex flex-col">
             <p className="text-white font-medium text-base">
               <span className="blue-text-gradient">@</span> {client_name}
             </p>
           </div>
 
-          <Image
-            src={image}
-            alt={`review by ${client_name}`}
-            className="h-10 w-10 object-cover rounded-full"
-            width={50}
-            height={50}
-          />
+          <div>
+            <Image
+              src={image}
+              alt={`review by ${client_name}`}
+              className="h-10 w-10 object-cover rounded-full"
+              width={50}
+              height={50}
+            />
+          </div>
+
         </div>
       </div>
     </motion.div>
@@ -49,3 +52,4 @@ const FeedbackCard = ({
 };
 
 export default FeedbackCard;
+// 2.13.16
