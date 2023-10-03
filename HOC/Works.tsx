@@ -40,4 +40,3 @@ const Works = () => {
 };
 
 export default Works;
-// 1.48.02

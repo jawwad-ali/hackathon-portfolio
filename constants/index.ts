@@ -159,27 +159,21 @@ const experiences = [
 
 const testimonials = [
     {
-        testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
+        review:
+            "Great work and fast delivery. Impressed and very happy! Thank you.",
+        client_name: "Morganemt",
         image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
-        testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
+        review:
+            "Jawwad is excellent and diligent in his work. He understood the requirements and responded to my requests in time and made all necessary revisions at the same time keeping too timelines as agreed. He is my go to guy when it comes to matter figma to react websites.",
+        client_name: "Ituzaafrica",
         image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
-        testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
+        review:
+            "Ali delivered quality work in a timely manner while following our guidelines.",
+        client_name: "Lisa Wang",
         image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
 ];
