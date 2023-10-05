@@ -1,4 +1,3 @@
-// import Wrapper from "@/HOC/wrapper";
 import "./globals.css";
 import type { Metadata } from "next";
 

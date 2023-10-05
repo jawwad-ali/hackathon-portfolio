@@ -28,7 +28,7 @@ const HeroSection = () => {
       </div>
 
       {/* Computer 3D Model */}
-      {/* <ComputerCanvas /> */}
+      <ComputerCanvas />
 
       {/* Scroll Down Component */}
       <ScrollDown />
