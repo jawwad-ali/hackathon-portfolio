@@ -7,11 +7,11 @@ import Heads from "./Heads";
 
 const Introduction = () => {
   return (
-    <> 
-      <motion.div variants={textVariant(0.5)}>
+    <>
+      <motion.div variants={textVariant(0.5)} className="mt-[0px] lg:mt-0">
         <Heads subText="Introduction" heading="Overview." />
       </motion.div>
- 
+
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4  text-secondary text-[17px] max-w-3xl leading-[30px]"

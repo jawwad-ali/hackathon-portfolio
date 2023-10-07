@@ -7,8 +7,8 @@ import { OrbitControls, useGLTF, Preload } from "@react-three/drei";
 import CanvasLoader from "./CanvasLoader";
 
 const Model = ({ isMobile }: any) => {
-  const gltf = useGLTF("/desktop_pc/scene.gltf");
-  return (
+  const gltf = useGLTF("/desktop_pc/scene.gltf"); 
+  return ( 
     <mesh>
       <hemisphereLight intensity={1.15} groundColor="black" />
       <spotLight
@@ -31,7 +31,7 @@ const Model = ({ isMobile }: any) => {
 };
 
 const ComputerCanvas = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false); 
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width:500px)");

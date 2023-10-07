@@ -21,7 +21,9 @@ import {
     fiverr,
     tiktok,
     ecomm,
-    PhotoGallery
+    PhotoGallery,
+    linkedin,
+    github,
 } from "@/public/assets";
 
 export const navLinks = [
@@ -75,7 +77,7 @@ const technologies = [
         name: "HTML 5",
         icon: html,
     },
-    { 
+    {
         name: "CSS 3",
         icon: css,
     },
@@ -114,7 +116,7 @@ const technologies = [
 ];
 
 const experiences = [
-    { 
+    {
         title: "React.js Developer",
         company_name: "IOTA SQUARE",
         icon: regex,
@@ -181,13 +183,13 @@ const testimonials = [
 const projects = [
     {
         name: "Tiktok",
-        hosted_link:"https://tiktik-chi.vercel.app/",
+        hosted_link: "https://tiktik-chi.vercel.app/",
         description:
             "Social Media platform that allows users to search, upload, like and comment on videos. User can signin via Google and can manage his account.",
         tags: [
             {
-                name: "react", 
-                color: "blue-text-gradient", 
+                name: "react",
+                color: "blue-text-gradient",
             },
             {
                 name: "sanity",
@@ -228,7 +230,7 @@ const projects = [
             }
         ],
         image: ecomm,
-        hosted_link:"https://hackathon-beryl.vercel.app/",
+        hosted_link: "https://hackathon-beryl.vercel.app/",
         source_code_link: "https://github.com/jawwad-ali/hackathon-portfolio",
     },
     {
@@ -254,9 +256,32 @@ const projects = [
             }
         ],
         image: PhotoGallery,
-        hosted_link:"https://cloudinary-photo-gallery-app.vercel.app/",
+        hosted_link: "https://cloudinary-photo-gallery-app.vercel.app/",
         source_code_link: "https://github.com/jawwad-ali/cloudinary-photo-gallery-app",
     },
 ];
+
+export const connectWithMe = [
+    {
+        platform_name: "LinkedIn",
+        platform_img: linkedin,
+        platform_link: "https://www.linkedin.com/in/ali-jawwad-webdeveloper-nextjs-typescript-tailwindcss-cms-expert/overlay/contact-info/"
+    },
+    {
+        platform_name: "Upwork",
+        platform_img: upwork,
+        platform_link: "https://www.upwork.com/freelancers/~01ca7cb675ae58479b"
+    },
+    {
+        platform_name: "Fiverr",
+        platform_img: fiverr,
+        platform_link: "https://www.fiverr.com/react_jawwad",
+    },
+    {
+        platform_name: "Github",
+        platform_img: github,
+        platform_link: "https://github.com/jawwad-ali",
+    },
+]
 
 export { services, technologies, experiences, testimonials, projects };

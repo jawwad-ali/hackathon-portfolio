@@ -6,14 +6,22 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 
 import { menu, close } from "../public/assets";
+
 import Logo from "../public/logo.jpeg";
+
 import Download from "../public/download.png";
+
 import Image from "next/image";
+
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState<boolean>(false);
   return (
-    <nav
+    <motion.nav
+      initial={{ x: "-100%" }}
+      animate={{ x: 0 }}
+      transition={{ duration: 1, ease: "linear" }}
       className={`${styles.paddingX} bg-primary w-full flex items-center py-5 fixed top-0 z-20`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -46,7 +54,7 @@ const Navbar = () => {
           </ul>
 
           {/* Mobile nav */}
-          <div className="sm:hidden flex flex-1 justify-end items-center">
+          {/* <div className="sm:hidden flex flex-1 justify-end items-center">
             <Image
               src={toggle ? close : menu}
               alt="Humburger menu"
@@ -77,10 +85,10 @@ const Navbar = () => {
                 ))}
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
