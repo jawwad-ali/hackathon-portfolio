@@ -8,7 +8,9 @@ import { styles } from "@/styles";
 
 const Feedback = () => {
   return (
-    <div className={`${styles.paddingX} m-20 max-w-6xl mx-auto mt-12 bg-black-100 rounded-[20px]`}>
+    <div
+      className={`${styles.paddingX} m-20 max-w-6xl mx-auto mt-12 bg-black-100 rounded-[20px]`}
+    >
       <div
         className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}
       >

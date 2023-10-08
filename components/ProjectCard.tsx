@@ -1,9 +1,16 @@
-import { fadeIn } from "@/utils/motion";
-import { motion } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
+
 import { Tilt } from "react-tilt";
-import { github,arrow } from "@/public/assets";
+
+import { github, arrow } from "@/public/assets";
+
 import Link from "next/link";
+
+import { motion, useAnimation } from "framer-motion";
+
+import { useInView } from "react-intersection-observer";
+
+import { useEffect } from "react";
 
 interface ProjectCardProps {
   name: string;
@@ -29,8 +36,24 @@ const ProjectCard = ({
   image,
   source_code_link,
 }: ProjectCardProps) => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start({ opacity: 1, transition: { duration: 2 } });
+    } else {
+      controls.start({ opacity: 0, transition: { duration: 2 } });
+    }
+  }, [inView,controls]);
+
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      ref={ref}
+      animate={controls}
+      initial={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+    >
       <Tilt
         options={{
           max: 45,
@@ -66,13 +89,11 @@ const ProjectCard = ({
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
 
-        {/* <div className="mt-2 text-secondary text-[14px]">
-          <Link href={`${hosted_link}`}>{hosted_link}</Link>
-        </div> */}
-
         <div className="flex flex-wrap gap-2 mt-5">
-          {tags.map((tag , index) => (
-            <p key={index} className={`${tag.color}`}>#{tag.name}</p>
+          {tags.map((tag, index) => (
+            <p key={index} className={`${tag.color}`}>
+              #{tag.name}
+            </p>
           ))}
         </div>
       </Tilt>

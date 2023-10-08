@@ -1,8 +1,13 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
 
-import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "@/utils/motion";
+// import { fadeIn } from "@/utils/motion";
+
+import { motion, useAnimation } from "framer-motion";
+
+import { useInView } from "react-intersection-observer";
+
+import { useEffect } from "react";
 
 interface TestimonialsProps {
   review: string;
@@ -18,9 +23,30 @@ const FeedbackCard = ({
   client_name,
   image,
 }: TestimonialsProps) => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start({
+        y: 1,
+        transition: {
+          duration: 1,
+          type: "spring",
+          stiffness: 100,
+          damping: 10,
+        },
+      });
+    } else {
+      controls.start({ y: -100, transition: { duration: 1 } });
+    }
+  }, [inView,controls]);
+
   return (
     <motion.div
-      variants={fadeIn("", "spring", index * 0.5, 0.75)}
+      ref={ref}
+      animate={controls}
+      initial={{ y: -100 }}
       className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
     >
       <p className="text-white font-black text-[48px]">&quot;</p>

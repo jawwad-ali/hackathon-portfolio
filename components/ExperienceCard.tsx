@@ -18,7 +18,7 @@ const ExperienceCard = ({ experience, idx }: any) => {
             alt={experience?.title}
             className="w-[60%] h-[60%] object-contain"
             width={60}
-            height={60}
+            height={60} 
           />
         </div>
       }
