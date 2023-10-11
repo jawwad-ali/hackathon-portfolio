@@ -6,7 +6,7 @@ const Introduction = () => {
     <>
       <div className="mt-[0px] lg:mt-0">
         <Heads subText="Introduction" heading="Overview." />
-        {/* OverView */}
+        {/* OverView */} 
         <p className="mt-4  text-secondary text-[17px] max-w-3xl leading-[30px]">
           Over the past 4 years, I am constantly learning new technologies and
           building logical problem-solving projects. From development,

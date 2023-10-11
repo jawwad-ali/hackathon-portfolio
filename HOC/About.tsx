@@ -1,4 +1,3 @@
-// 'use client';
 import { styles } from "@/styles";
 import { services } from "@/constants";
 
@@ -8,7 +7,7 @@ import Introduction from "@/components/Introduction";
 const About = () => {
   return (
     <>
-      <div className={`${styles.paddingX} max-w-7xl mx-auto relative z-0 `}>
+      <div id='about' className={`${styles.paddingX} max-w-7xl mx-auto relative z-0 `}>
         <Introduction />
 
         <div className="mt-20 flex flex-wrap gap-10 w-full">

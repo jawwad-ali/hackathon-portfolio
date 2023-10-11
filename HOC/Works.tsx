@@ -10,6 +10,7 @@ import Heads from "@/components/Heads";
 const Works = () => {
   return (
     <motion.div
+    id='work'
       className={`${styles.paddingX} max-w-7xl mx-auto relative z-0`}
       style={{ marginTop: "100px" }}
     >

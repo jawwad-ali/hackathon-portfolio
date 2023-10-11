@@ -9,6 +9,7 @@ import { styles } from "@/styles";
 const Feedback = () => {
   return (
     <div
+      id="testimonials"
       className={`${styles.paddingX} m-20 max-w-6xl mx-auto mt-12 bg-black-100 rounded-[20px]`}
     >
       <div

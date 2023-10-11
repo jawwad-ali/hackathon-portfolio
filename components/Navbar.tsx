@@ -7,8 +7,6 @@ import { navLinks } from "../constants";
 
 import { menu, close } from "../public/assets";
 
-import Logo from "../public/logo.jpeg";
-
 import Download from "../public/download.png";
 
 import Image from "next/image";
@@ -54,7 +52,7 @@ const Navbar = () => {
           </ul>
 
           {/* Mobile nav */}
-          {/* <div className="sm:hidden flex flex-1 justify-end items-center">
+          <div className="sm:hidden flex flex-1 justify-end items-center">
             <Image
               src={toggle ? close : menu}
               alt="Humburger menu"
@@ -76,7 +74,7 @@ const Navbar = () => {
                     className="text-secondary hover:text-white font-poppins text-[16px] font-medium cursor-pointer transition-all"
                   >
                     <Link
-                      href={`#${link.title}`}
+                      href={`#${link.id}`}
                       onClick={() => setToggle(!toggle)}
                     >
                       {link.title}
@@ -85,7 +83,7 @@ const Navbar = () => {
                 ))}
               </ul>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </motion.nav>
